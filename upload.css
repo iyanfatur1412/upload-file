@@ -1,0 +1,63 @@
+* {
+    font-family: tahoma;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 80%;
+    margin: 200px auto;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.upload {
+    display: block;
+    width: 80%;
+    height: 50px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 1.2rem;
+    line-height: 50px;
+    border-radius: 10px;
+    background-color: #1679ab;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.upload:hover {
+    background-color: #102c57;
+}
+
+.btn {
+    width: 15%;
+}
+
+button {
+    display: block;
+    background-color: #1679ab;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    background-color: #102c57;
+}
+
+button img {
+    width: 100%;
+}
+
+input {
+    display: none;
+}

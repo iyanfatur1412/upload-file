@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashbord.css">
+    <title>Halaman Dashboard</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" class="active">New</a></li>
+            <li><a href="#">Latest</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <figure class="card">
+            <h4 class="nama">Mega</h4>
+            <h4 class="meteran">10 Meter</h4>
+            <h4 class="deadline" style="color: red">Jam 14.00</h4>
+            <h4 class="unduh"><a href="">Unduh</a></h4>
+        </figure>
+    </main>
+
+    <script>
+        let actives = document.querySelectorAll(".navbar li a");
+        btnActive = [...actives];
+        btnActive.map(x => x.addEventListener("click", function() {
+            btnActive.map(x => x.classList.remove("active"));
+            this.classList.add("active");
+        }))
+    </script>
+</body>
+</html>
